@@ -67,3 +67,6 @@ Lv136・必要魔命1052という値は、`data/mechanics/resist_hack.md` のレ
 - `data/combat_formulas.json` — 命中(物理)側の実測式(必要命中値・ジョブ区分補正)
 - `data/mechanics/resist_hack.md` — レジストハック(状態異常耐性ランク低下)の解説
 - `data/mechanics/content_level.md` — コンテンツレベル(CL)と必要命中の関係
+- `data/monsters/sortie_efgh_bosses.json` — E/F/G/Hボスの基礎ステータス(HP・回避・
+  魔防・INT/MND・属性耐性)。Hボス(Aita)は魔防122・INT494と他より高水準で、必要魔命が
+  E/F/Gより高くなると推定される(実測値は未取得)。

@@ -67,3 +67,7 @@
 本メモは1回分の実戦ログから機械的に抽出した内容に基づく。装備・支援状況・出目(ロール)は
 毎回変動するため、戦闘時間や数値はあくまで参考値。各ボスの種族・レベル・弱点属性等の基礎
 データは `data/monsters/resistance_table.json` のデータセットと関連する。
+
+E/F/G/Hボスの詳細な基礎ステータス(HP・回避・魔防・INT/MND・属性耐性)は
+`data/monsters/sortie_efgh_bosses.json` を参照。GボスTriboulexの光属性吸収(本メモの
+「重要な発見」)は、同ファイルの `elemental_resistance_pct.light_dark = "吸収"` と一致する。

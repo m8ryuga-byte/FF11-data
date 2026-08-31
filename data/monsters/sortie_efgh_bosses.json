@@ -1,0 +1,64 @@
+{
+  "title": "物理ソーティ E/F/G/Hボス 基礎データ",
+  "source_note": "Discord添付画像から別セッションが学習し共有。「わし日記」ブログのE/F/G INT値(363/350/504)と一致することを確認済みの、より詳細な公式基礎データ。",
+  "level": 145,
+  "resistance_note": "elemental_damage_reduction_pct(魔法ダメージ軽減率)とelemental_resistance_pct(属性耐性%)は、元データが「火水・氷雷・風土・光闇」の4ペア単位・各4値でしか提供されていないため、ペア内の2属性(例:火と水)が同一値を共有するのか、単純化された表記なのかは未確認。ペア単位のまま保持している。",
+  "bosses": [
+    {
+      "letter": "E",
+      "name": "Dhartok",
+      "hp": 1560000,
+      "evasion": 1581,
+      "magic_defense": 100,
+      "int": 363,
+      "mnd": 338,
+      "damage_cut": "なし",
+      "elemental_damage_reduction_pct": { "fire_water": 70, "ice_thunder": 50, "wind_earth": 70, "light_dark": 70 },
+      "elemental_resistance_pct": { "fire_water": "吸収", "ice_thunder": 70, "wind_earth": 85, "light_dark": 5 },
+      "required_magic_accuracy_mb": 1316,
+      "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:土 85%)"
+    },
+    {
+      "letter": "F",
+      "name": "Gartell",
+      "hp": 1600000,
+      "evasion": 1613,
+      "magic_defense": 100,
+      "int": 350,
+      "mnd": 394,
+      "damage_cut": "時間経過",
+      "elemental_damage_reduction_pct": { "fire_water": 5, "ice_thunder": 70, "wind_earth": "吸収", "light_dark": 5 },
+      "elemental_resistance_pct": { "fire_water": 5, "ice_thunder": "吸収", "wind_earth": 70, "light_dark": 5 },
+      "required_magic_accuracy_mb": 1344,
+      "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:土/氷 70%)"
+    },
+    {
+      "letter": "G",
+      "name": "Triboulex",
+      "hp": 1500000,
+      "evasion": 1581,
+      "magic_defense": 100,
+      "int": 504,
+      "mnd": 367,
+      "damage_cut": "なし",
+      "elemental_damage_reduction_pct": { "fire_water": 60, "ice_thunder": 30, "wind_earth": 50, "light_dark": 70 },
+      "elemental_resistance_pct": { "fire_water": 50, "ice_thunder": 60, "wind_earth": 40, "light_dark": "吸収" },
+      "required_magic_accuracy_mb": 1372,
+      "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:火/雷 60%)。data/encounters/sortie9_physical_bosses.mdで確認された光属性(インパクト)吸収の実測と、この表のlight_dark=吸収が一致。"
+    },
+    {
+      "letter": "H",
+      "name": "Aita",
+      "hp": 1600000,
+      "evasion": 1613,
+      "magic_defense": 122,
+      "int": 494,
+      "mnd": 427,
+      "damage_cut": "時間経過",
+      "elemental_damage_reduction_pct": { "fire_water": 70, "ice_thunder": null, "wind_earth": 70, "light_dark": 5 },
+      "elemental_resistance_pct": { "fire_water": 70, "ice_thunder": 70, "wind_earth": 70, "light_dark": 5 },
+      "required_magic_accuracy_mb": null,
+      "required_magic_accuracy_note": "他ボスと比べ魔防(122)・INT(494)・MND(427)が高水準。data/encounters/sortie9_physical_bosses.mdでは弱点は風(-50%)と記録されているが、必要魔命の実測値は未取得。"
+    }
+  ]
+}
