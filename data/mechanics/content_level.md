@@ -62,3 +62,6 @@ CLから実用上、確実に判断できるのは以下の2点とされる。
 
 - `data/combat_formulas.json` — 実測ベースの必要命中値・防御規定値
 - `data/mechanics/magic_accuracy_requirements.md` — 必要魔命の目安
+- `data/mechanics/high_difficulty_content_cl.md` — アンバスケード・オーメン・
+  デュナミス-ディヴァージェンス・オデシー等、高難度コンテンツ別のCL・必要命中の
+  実データ
