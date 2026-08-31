@@ -1,0 +1,16 @@
+{
+  "skill": "召喚魔法 (Summoning Magic)",
+  "description": "召喚士(SMN)が使用する、召喚獣を呼び出し操る魔法。召喚獣自身が行う特殊技は「ブラッドパクト」と呼ばれる。",
+  "spells": [
+    { "name_ja": "イフリート召喚", "name_en": "Summon Ifrit", "category": "召喚", "jobs": ["SMN"], "effect": "火の召喚獣イフリートを呼び出す。", "notes": "各属性の召喚獣(イフリート/シヴァ/ガルーダ/タイタン/リヴァイアサン/ラムウ/カーバンクル/フェンリル/ディアボロス/オーディン(称号)等)が存在。", "verified": false },
+    { "name_ja": "シヴァ召喚", "name_en": "Summon Shiva", "category": "召喚", "jobs": ["SMN"], "effect": "氷の召喚獣シヴァを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "ガルーダ召喚", "name_en": "Summon Garuda", "category": "召喚", "jobs": ["SMN"], "effect": "風の召喚獣ガルーダを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "タイタン召喚", "name_en": "Summon Titan", "category": "召喚", "jobs": ["SMN"], "effect": "土の召喚獣タイタンを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "リヴァイアサン召喚", "name_en": "Summon Leviathan", "category": "召喚", "jobs": ["SMN"], "effect": "水の召喚獣リヴァイアサンを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "ラムウ召喚", "name_en": "Summon Ramuh", "category": "召喚", "jobs": ["SMN"], "effect": "雷の召喚獣ラムウを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "カーバンクル召喚", "name_en": "Summon Carbuncle", "category": "召喚", "jobs": ["SMN"], "effect": "光属性寄りの補助型召喚獣カーバンクルを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "フェンリル召喚", "name_en": "Summon Fenrir", "category": "召喚", "jobs": ["SMN"], "effect": "闇属性寄りの召喚獣フェンリルを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "ディアボロス召喚", "name_en": "Summon Diabolos", "category": "召喚", "jobs": ["SMN"], "effect": "闇の召喚獣ディアボロスを呼び出す。", "notes": "", "verified": false },
+    { "name_ja": "アストラルフロウ", "name_en": "Astral Flow", "category": "特殊魔法", "jobs": ["SMN"], "effect": "召喚獣の消費と引き換えに、強力なブラッドパクト(絶技)を無詠唱・無待ち時間で発動する。", "notes": "使用後、当該召喚獣は再召喚まで待機時間が発生する。", "verified": false }
+  ]
+}

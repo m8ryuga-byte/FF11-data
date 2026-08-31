@@ -1,0 +1,33 @@
+{
+  "skill": "黒魔法 (Black Magic)",
+  "description": "精霊魔法(直接攻撃)・弱体魔法・エンスペルなどを含む黒魔法スキルの魔法一覧。",
+  "spells": [
+    { "name_ja": "ファイア", "name_en": "Fire", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に火属性の単体ダメージを与える。", "notes": "ファイアI〜VI、ファイガI〜III、フレア/フレアIIまで系統が続く。他5属性(ブリザド/エアロ/ストーン/ウォタ/サンダ)も同様の階級構成。", "verified": false },
+    { "name_ja": "ブリザド", "name_en": "Blizzard", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に氷属性の単体ダメージを与える。", "notes": "ブリザドI〜VI、ブリザガI〜III、フリーズ/フリーズIIまで存在。", "verified": false },
+    { "name_ja": "エアロ", "name_en": "Aero", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に風属性の単体ダメージを与える。", "notes": "エアロI〜VI、エアロガI〜III、トルネド/トルネドIIまで存在。", "verified": false },
+    { "name_ja": "ストーン", "name_en": "Stone", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に土属性の単体ダメージを与える。", "notes": "ストーンI〜VI、ストーンガI〜III、クエイク/クエイクIIまで存在。", "verified": false },
+    { "name_ja": "ウォタ", "name_en": "Water", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に水属性の単体ダメージを与える。", "notes": "ウォタI〜VI、ウォタガI〜III、フラッド/フラッドIIまで存在。", "verified": false },
+    { "name_ja": "サンダ", "name_en": "Thunder", "category": "精霊魔法(単体攻撃)", "jobs": ["BLM","RDM","SCH"], "effect": "対象に雷属性の単体ダメージを与える。", "notes": "サンダI〜VI、サンダガI〜III、バースト/バーストIIまで存在。", "verified": false },
+    { "name_ja": "フレア", "name_en": "Flare", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象に強力な火属性の単体大ダメージを与える。", "notes": "フレア/フレアIIが存在。詠唱時間・MP消費が大きい古代魔法。", "verified": false },
+    { "name_ja": "フリーズ", "name_en": "Freeze", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象を中心に氷属性の範囲大ダメージを与える。", "notes": "フリーズ/フリーズIIが存在。", "verified": false },
+    { "name_ja": "トルネド", "name_en": "Tornado", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象を中心に風属性の範囲大ダメージを与える。", "notes": "トルネド/トルネドIIが存在。", "verified": false },
+    { "name_ja": "クエイク", "name_en": "Quake", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象を中心に土属性の範囲大ダメージを与える。", "notes": "クエイク/クエイクIIが存在。", "verified": false },
+    { "name_ja": "フラッド", "name_en": "Flood", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象を中心に水属性の範囲大ダメージを与える。", "notes": "フラッド/フラッドIIが存在。", "verified": false },
+    { "name_ja": "バースト", "name_en": "Burst", "category": "精霊魔法(古代魔法)", "jobs": ["BLM","SCH"], "effect": "対象を中心に雷属性の範囲大ダメージを与える。", "notes": "バースト/バーストIIが存在。", "verified": false },
+    { "name_ja": "スリプル", "name_en": "Sleep", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象を睡眠状態にする。", "notes": "スリプル/スリプルIIが存在。", "verified": false },
+    { "name_ja": "スリプガ", "name_en": "Sleepga", "category": "弱体魔法(範囲)", "jobs": ["BLM","SCH"], "effect": "範囲内の敵を睡眠状態にする。", "notes": "スリプガ/スリプガIIが存在。", "verified": false },
+    { "name_ja": "スロウ", "name_en": "Slow", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象の攻撃間隔・詠唱時間を延長させる。", "notes": "スロウ/スロウIIが存在。", "verified": false },
+    { "name_ja": "パライズ", "name_en": "Paralyze", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象を一定確率で行動不能にする麻痺状態にする。", "notes": "パライズ/パライズIIが存在。", "verified": false },
+    { "name_ja": "サイレス", "name_en": "Silence", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象の魔法詠唱を封じる。", "notes": "", "verified": false },
+    { "name_ja": "ブラインド", "name_en": "Blind", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象の物理命中率を低下させる。", "notes": "ブラインド/ブラインドIIが存在。", "verified": false },
+    { "name_ja": "ポイズン", "name_en": "Poison", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象を継続ダメージを受ける毒状態にする。", "notes": "ポイズン/ポイズンIIが存在。", "verified": false },
+    { "name_ja": "ディスペル", "name_en": "Dispel", "category": "弱体魔法", "jobs": ["BLM","RDM","SCH"], "effect": "対象に付与された強化魔法効果を1つ解除する。", "notes": "", "verified": false },
+    { "name_ja": "グラビデ", "name_en": "Gravity", "category": "弱体魔法", "jobs": ["BLM","SCH"], "effect": "対象の移動速度を大幅に低下させ、時間経過ダメージを与える。", "notes": "グラビデ/グラビデIIが存在。", "verified": false },
+    { "name_ja": "バインド", "name_en": "Bind", "category": "弱体魔法", "jobs": ["BLM"], "effect": "対象の行動を一定時間封じる。", "notes": "", "verified": false },
+    { "name_ja": "ブレイク", "name_en": "Break", "category": "弱体魔法", "jobs": ["BLM"], "effect": "対象を一定確率で石化させる。", "notes": "ブレイクガ(範囲版)も存在。", "verified": false },
+    { "name_ja": "アドル", "name_en": "Addle", "category": "弱体魔法", "jobs": ["BLM","SCH"], "effect": "対象の魔法詠唱時間を延長させる。", "notes": "アドル/アドルIIが存在。", "verified": false },
+    { "name_ja": "フラズル", "name_en": "Frazzle", "category": "弱体魔法(属性)", "jobs": ["BLM","SCH"], "effect": "対象のINT等を低下させる属性弱体魔法。", "notes": "フラズル/フラズルIIが存在。", "verified": false },
+    { "name_ja": "ディストラクト", "name_en": "Distract", "category": "弱体魔法(属性)", "jobs": ["BLM","SCH"], "effect": "対象の命中率等を低下させる属性弱体魔法。", "notes": "ディストラクトI〜IIIが存在。", "verified": false },
+    { "name_ja": "エンファイア", "name_en": "Enfire", "category": "エンスペル", "jobs": ["RDM","BLU"], "effect": "近接武器攻撃に火属性追加ダメージを付与する。", "notes": "エンブリザド/エンエアロ/エンストーン/エンウォタ/エンサンダも同系統。エンファイアIIなど上位版あり。", "verified": false }
+  ]
+}

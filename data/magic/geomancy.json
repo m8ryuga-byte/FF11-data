@@ -1,0 +1,12 @@
+{
+  "skill": "地霊魔法 (Geomancy)",
+  "description": "ジオマンサー(GEO)が使用する、フィールドを設置し範囲内に効果を及ぼす魔法体系。「印(Indi-)」と「地霊(Geo-)」の2系統が存在。",
+  "spells": [
+    { "name_ja": "地霊の炎", "name_en": "Geo-Frailty", "category": "地霊魔法(弱体フィールド)", "jobs": ["GEO"], "effect": "設置型の効果範囲を展開し、範囲内の敵の防御力を低下させ続ける。", "notes": "他にもGeo-Malaise(命中低下)、Geo-Torpor(俊敏低下)など多数の弱体系地霊魔法が存在。", "verified": false },
+    { "name_ja": "印の加護", "name_en": "Indi-Haste", "category": "印魔法(強化・追尾型)", "jobs": ["GEO"], "effect": "詠唱者を中心に追従する効果範囲を展開し、範囲内の味方の攻撃間隔を短縮する。", "notes": "Indi-Regen(HP継続回復)、Indi-Refresh(MP継続回復)、Indi-Barrier等、印魔法は多数存在。", "verified": false },
+    { "name_ja": "地霊の陣", "name_en": "Bolster", "category": "強化技", "jobs": ["GEO"], "effect": "現在展開中の地霊魔法/印魔法の効果を強化する。", "notes": "", "verified": false },
+    { "name_ja": "融合", "name_en": "Full Circle", "category": "特殊技", "jobs": ["GEO"], "effect": "印魔法と地霊魔法の効果範囲を入れ替える。", "notes": "", "verified": false },
+    { "name_ja": "浄化の光", "name_en": "Dematerialize", "category": "特殊技", "jobs": ["GEO"], "effect": "展開中の地霊魔法を任意のタイミングで解除する。", "notes": "", "verified": false }
+  ],
+  "note": "地霊魔法は多数の弱体・強化バリエーション(Geo-/Indi-の対になった効果)が存在するため、代表例のみ記載。今後拡張予定。"
+}

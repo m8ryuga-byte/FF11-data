@@ -1,0 +1,21 @@
+{
+  "skill": "忍術 (Ninjutsu)",
+  "description": "忍者(NIN)が使用する忍術の一覧。使用には対応する巻物系消耗品(苦無等)、または装備品による代用が必要。",
+  "spells": [
+    { "name_ja": "空蝉の術:一", "name_en": "Utsusemi: Ichi", "category": "防御忍術", "jobs": ["NIN"], "effect": "物理攻撃を数回無効化する分身シャドウを纏う。", "notes": "空蝉の術:二、三も存在(上位ほど分身数増加)。", "verified": false },
+    { "name_ja": "遁甲の術:一", "name_en": "Tonko: Ichi", "category": "補助忍術", "jobs": ["NIN"], "effect": "一定時間、敵から見えにくくなる。", "notes": "遁甲の術:二も存在。", "verified": false },
+    { "name_ja": "物見の術:一", "name_en": "Monomi: Ichi", "category": "補助忍術", "jobs": ["NIN"], "effect": "臭いによる索敵から逃れる。", "notes": "物見の術:二も存在。", "verified": false },
+    { "name_ja": "火遁の術:一", "name_en": "Katon: Ichi", "category": "攻撃忍術(火)", "jobs": ["NIN"], "effect": "対象に火属性の範囲ダメージを与える。", "notes": "火遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "水遁の術:一", "name_en": "Suiton: Ichi", "category": "攻撃忍術(水)", "jobs": ["NIN"], "effect": "対象に水属性の範囲ダメージを与える。", "notes": "水遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "土遁の術:一", "name_en": "Doton: Ichi", "category": "攻撃忍術(土)", "jobs": ["NIN"], "effect": "対象に土属性の範囲ダメージを与える。", "notes": "土遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "風遁の術:一", "name_en": "Huton: Ichi", "category": "攻撃忍術(風)", "jobs": ["NIN"], "effect": "対象に風属性の範囲ダメージを与える。", "notes": "風遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "氷遁の術:一", "name_en": "Hyoton: Ichi", "category": "攻撃忍術(氷)", "jobs": ["NIN"], "effect": "対象に氷属性の範囲ダメージを与える。", "notes": "氷遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "雷遁の術:一", "name_en": "Raiton: Ichi", "category": "攻撃忍術(雷)", "jobs": ["NIN"], "effect": "対象に雷属性の範囲ダメージを与える。", "notes": "雷遁の術:二、三も存在。", "verified": false },
+    { "name_ja": "暗闇の術:一", "name_en": "Kurayami: Ichi", "category": "弱体忍術", "jobs": ["NIN"], "effect": "対象の物理命中率を低下させる。", "notes": "暗闇の術:二も存在。", "verified": false },
+    { "name_ja": "防己の術:一", "name_en": "Hojo: Ichi", "category": "弱体忍術", "jobs": ["NIN"], "effect": "対象の攻撃間隔・詠唱時間を延長させる。", "notes": "防己の術:二も存在。", "verified": false },
+    { "name_ja": "毒盛の術:一", "name_en": "Dokumori: Ichi", "category": "弱体忍術", "jobs": ["NIN"], "effect": "対象を継続ダメージを受ける毒状態にする。", "notes": "毒盛の術:二も存在。", "verified": false },
+    { "name_ja": "呪縛の術:一", "name_en": "Jubaku: Ichi", "category": "弱体忍術", "jobs": ["NIN"], "effect": "対象の行動を一定時間封じる。", "notes": "呪縛の術:二も存在。", "verified": false },
+    { "name_ja": "分身の術", "name_en": "Migawari: Ichi", "category": "防御忍術", "jobs": ["NIN"], "effect": "1回のみ物理攻撃を無効化する身代わり効果を付与する。", "notes": "", "verified": false },
+    { "name_ja": "鉤縄の術", "name_en": "Kaginawa", "category": "移動忍術", "jobs": ["NIN"], "effect": "特定エリアで崖などを登るために使用する非戦闘忍術。", "notes": "", "verified": false }
+  ]
+}

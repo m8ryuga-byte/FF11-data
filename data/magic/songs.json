@@ -1,0 +1,20 @@
+{
+  "skill": "歌 (Songs)",
+  "description": "吟遊詩人(BRD)が管楽器/弦楽器を用いて演奏する歌(魔法に準ずる効果)。パーティ全体に効果を及ぼすものが多い。",
+  "spells": [
+    { "name_ja": "戦太鼓の歌", "name_en": "Minne", "category": "強化歌(攻撃力)", "jobs": ["BRD"], "effect": "対象の物理攻撃力を上昇させる。", "notes": "戦太鼓の歌I〜IVが存在。", "verified": false },
+    { "name_ja": "動と静の歌", "name_en": "Minuet", "category": "強化歌(遠隔攻撃力)", "jobs": ["BRD"], "effect": "対象の遠隔攻撃力を上昇させる。", "notes": "動と静の歌I〜Vが存在。", "verified": false },
+    { "name_ja": "行進曲", "name_en": "Madrigal", "category": "強化歌(遠隔命中)", "jobs": ["BRD"], "effect": "対象の遠隔攻撃命中率を上昇させる。", "notes": "行進曲I〜IIIが存在。", "verified": false },
+    { "name_ja": "賛美歌", "name_en": "Prelude", "category": "強化歌(魔法攻撃力)", "jobs": ["BRD"], "effect": "対象の魔法攻撃力を上昇させる。", "notes": "賛美歌I・IIが存在。", "verified": false },
+    { "name_ja": "円舞曲", "name_en": "Ballad", "category": "強化歌(MP回復)", "jobs": ["BRD"], "effect": "対象のMPを回復する、または回復量を上昇させる。", "notes": "円舞曲I〜IIIが存在。", "verified": false },
+    { "name_ja": "牧歌", "name_en": "Paeon", "category": "強化歌(MP継続回復)", "jobs": ["BRD"], "effect": "対象のMPを継続的に回復する状態にする。", "notes": "牧歌I〜VIが存在。", "verified": false },
+    { "name_ja": "哀歌", "name_en": "Elegy", "category": "弱体歌", "jobs": ["BRD"], "effect": "対象の移動速度を低下させる。", "notes": "哀歌I・IIが存在。", "verified": false },
+    { "name_ja": "鎮魂歌", "name_en": "Requiem", "category": "弱体歌", "jobs": ["BRD"], "effect": "対象の魔法回避率を低下させる。", "notes": "鎮魂歌I〜VIIが存在。", "verified": false },
+    { "name_ja": "挽歌", "name_en": "Threnody", "category": "弱体歌(属性耐性ダウン)", "jobs": ["BRD"], "effect": "対象の特定属性への耐性を低下させる。", "notes": "火・氷・風・土・水・雷の6属性分存在。", "verified": false },
+    { "name_ja": "終曲", "name_en": "Finale", "category": "弱体歌", "jobs": ["BRD"], "effect": "対象の魔法防御力を低下させる。", "notes": "", "verified": false },
+    { "name_ja": "子守歌", "name_en": "Lullaby", "category": "弱体歌", "jobs": ["BRD"], "effect": "対象を睡眠状態にする。", "notes": "群れの子守歌(範囲版)も存在。", "verified": false },
+    { "name_ja": "小ymn", "name_en": "Carol", "category": "強化歌(属性耐性アップ)", "jobs": ["BRD"], "effect": "対象の特定属性への耐性を上昇させる。", "notes": "属性ごとに存在。", "verified": false },
+    { "name_ja": "軍馬の歌", "name_en": "Mazurka", "category": "強化歌(移動速度)", "jobs": ["BRD"], "effect": "対象の移動速度を上昇させる。", "notes": "チョコボ用など複数種存在。", "verified": false },
+    { "name_ja": "黎明の歌", "name_en": "Aubade", "category": "強化歌(複合)", "jobs": ["BRD"], "effect": "複数の効果を同時に付与する高難度な歌。上位コンテンツで習得。", "notes": "詳細は要検証。", "verified": false }
+  ]
+}

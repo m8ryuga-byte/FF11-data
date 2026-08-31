@@ -1,0 +1,13 @@
+{
+  "skill": "暗黒魔法 (Dark Magic)",
+  "description": "HP/MP吸収や能力値吸収などを含む暗黒魔法スキルの魔法一覧。主にDRK/BLM/RDM/SCHが使用。",
+  "spells": [
+    { "name_ja": "バイオ", "name_en": "Bio", "category": "弱体魔法(継続ダメージ)", "jobs": ["DRK","BLM","RDM","SCH"], "effect": "対象に継続ダメージと物理攻撃力ダウンを与える。", "notes": "バイオI〜IIIが存在。", "verified": false },
+    { "name_ja": "ドレイン", "name_en": "Drain", "category": "吸収魔法", "jobs": ["DRK","BLM","SCH"], "effect": "対象のHPを吸収し自分のHPを回復する。", "notes": "ドレインI〜IIIが存在。", "verified": false },
+    { "name_ja": "アスピル", "name_en": "Aspir", "category": "吸収魔法", "jobs": ["DRK","BLM","RDM","SCH"], "effect": "対象のMPを吸収し自分のMPを回復する。", "notes": "アスピルI〜IIIが存在。", "verified": false },
+    { "name_ja": "アブゾアストレングス", "name_en": "Absorb-STR", "category": "能力値吸収魔法", "jobs": ["DRK"], "effect": "対象のSTRを一時的に吸収して低下させ、自身のSTRを上昇させる。", "notes": "同系統でAbsorb-DEX/VIT/AGI/INT/MND/CHR/TP/Accなどが存在。", "verified": false },
+    { "name_ja": "スタン", "name_en": "Stun", "category": "弱体魔法", "jobs": ["DRK"], "effect": "対象の詠唱・行動を短時間中断させる。", "notes": "", "verified": false },
+    { "name_ja": "エンドーク", "name_en": "Endark", "category": "エンスペル", "jobs": ["DRK"], "effect": "近接武器攻撃に闇属性追加ダメージを付与する。", "notes": "エンドークIIも存在。", "verified": false },
+    { "name_ja": "トラクター", "name_en": "Tractor", "category": "補助魔法", "jobs": ["DRK"], "effect": "戦闘不能になったパーティメンバーの霊体をホームポイント方向へ移動させる。", "notes": "", "verified": false }
+  ]
+}

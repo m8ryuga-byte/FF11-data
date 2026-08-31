@@ -1,0 +1,122 @@
+{
+  "description": "各ジョブのジョブアビリティ・SPアビリティ一覧(代表的なもの)。全ジョブ共通で使用できる汎用アビリティ(挑発は戦士専用など、実際はジョブ固有)は各ジョブ内に記載。",
+  "jobs": [
+    { "job_ja": "戦士", "job_en": "Warrior (WAR)", "abilities": [
+      { "name_ja": "挑発", "name_en": "Provoke", "type": "ジョブアビリティ", "effect": "対象のヘイトを大きく上昇させる。", "verified": false },
+      { "name_ja": "におうだち", "name_en": "Defender", "type": "ジョブアビリティ", "effect": "物理防御力を上げる代わりに物理攻撃力を下げる。", "verified": false },
+      { "name_ja": "武心", "name_en": "Berserk", "type": "ジョブアビリティ", "effect": "物理攻撃力を上げる代わりに物理防御力を下げる。", "verified": false },
+      { "name_ja": "命知らず", "name_en": "Warcry", "type": "ジョブアビリティ", "effect": "周囲の味方の攻撃力を一時的に上昇させる。", "verified": false },
+      { "name_ja": "御霊", "name_en": "Mighty Strikes", "type": "SPアビリティ", "effect": "一定時間、必ずクリティカルヒットするようになる。", "verified": false }
+    ]},
+    { "job_ja": "モンク", "job_en": "Monk (MNK)", "abilities": [
+      { "name_ja": "対空", "name_en": "Dodge", "type": "ジョブアビリティ", "effect": "回避率を一時的に上昇させる。", "verified": false },
+      { "name_ja": "百烈拳", "name_en": "Hundred Fists", "type": "SPアビリティ", "effect": "一定時間、素手攻撃の攻撃間隔を大幅短縮する。", "verified": false },
+      { "name_ja": "心眼", "name_en": "Focus", "type": "ジョブアビリティ", "effect": "命中率を一時的に上昇させる。", "verified": false },
+      { "name_ja": "気合十分", "name_en": "Chakra", "type": "ジョブアビリティ", "effect": "自身のHPを回復し状態異常を軽減する。", "verified": false }
+    ]},
+    { "job_ja": "白魔道士", "job_en": "White Mage (WHM)", "abilities": [
+      { "name_ja": "デヴォーション", "name_en": "Devotion", "type": "ジョブアビリティ", "effect": "自身のMPを消費し対象のHPを回復する。", "verified": false },
+      { "name_ja": "祈り", "name_en": "Divine Seal", "type": "ジョブアビリティ", "effect": "次に詠唱する白魔法の効果量を大幅に上昇させる。", "verified": false },
+      { "name_ja": "ベネディクション", "name_en": "Benediction", "type": "SPアビリティ", "effect": "対象のHPを全回復し、状態異常も回復する。", "verified": false }
+    ]},
+    { "job_ja": "黒魔道士", "job_en": "Black Mage (BLM)", "abilities": [
+      { "name_ja": "エレメンタルシール", "name_en": "Elemental Seal", "type": "ジョブアビリティ", "effect": "次に詠唱する黒魔法(精霊魔法/弱体魔法)の命中率を大幅に上昇させる。", "verified": false },
+      { "name_ja": "マニフェステーション", "name_en": "Manafont", "type": "SPアビリティ", "effect": "一定時間、魔法詠唱でMPを消費しなくなる。", "verified": false }
+    ]},
+    { "job_ja": "赤魔道士", "job_en": "Red Mage (RDM)", "abilities": [
+      { "name_ja": "デュアルボックス...コンバート", "name_en": "Convert", "type": "ジョブアビリティ", "effect": "自身のHPを消費してMPを回復する。", "verified": false },
+      { "name_ja": "サブライメーション", "name_en": "Sublimation", "type": "ジョブアビリティ", "effect": "発動後、被ダメージ分をストックしMPに変換できる状態になる。", "verified": false },
+      { "name_ja": "秘術", "name_en": "Chainspell", "type": "SPアビリティ", "effect": "一定時間、魔法の詠唱時間・キャストディレイが実質無くなる。", "verified": false }
+    ]},
+    { "job_ja": "シーフ", "job_en": "Thief (THF)", "abilities": [
+      { "name_ja": "はぐれメタル...トレジャーハント", "name_en": "Treasure Hunter", "type": "ジョブアビリティ", "effect": "モンスターからのアイテムドロップ率を上昇させる。", "verified": false },
+      { "name_ja": "スニークアタック", "name_en": "Sneak Attack", "type": "ジョブアビリティ", "effect": "対象の背後から攻撃した際、次の一撃の与ダメージ・クリティカル率を大幅上昇させる。", "verified": false },
+      { "name_ja": "トリックアタック", "name_en": "Trick Attack", "type": "ジョブアビリティ", "effect": "自分への攻撃対象ヘイトを他者に肩代わりさせつつ、次の一撃の威力を上昇させる。", "verified": false },
+      { "name_ja": "怒涛の連撃", "name_en": "Perfect Dodge", "type": "SPアビリティ", "effect": "一定時間、物理攻撃を完全に回避する。", "verified": false }
+    ]},
+    { "job_ja": "ナイト", "job_en": "Paladin (PLD)", "abilities": [
+      { "name_ja": "シールドバッシュ", "name_en": "Shield Bash", "type": "ジョブアビリティ", "effect": "盾で攻撃しスタン効果を与える。", "verified": false },
+      { "name_ja": "レイジャー...センチネル", "name_en": "Sentinel", "type": "ジョブアビリティ", "effect": "物理防御力を大幅に上昇させる。", "verified": false },
+      { "name_ja": "カバー", "name_en": "Cover", "type": "ジョブアビリティ", "effect": "対象への物理攻撃を身代わりで受ける。", "verified": false },
+      { "name_ja": "インビンシブル", "name_en": "Invincible", "type": "SPアビリティ", "effect": "一定時間、あらゆるダメージを無効化する。", "verified": false }
+    ]},
+    { "job_ja": "暗黒騎士", "job_en": "Dark Knight (DRK)", "abilities": [
+      { "name_ja": "アルケミー...ラストリゾート", "name_en": "Last Resort", "type": "ジョブアビリティ", "effect": "HPが低いほど物理攻撃力が上昇する状態になる。", "verified": false },
+      { "name_ja": "魂の座", "name_en": "Souleater", "type": "ジョブアビリティ", "effect": "自身のHPを消費して物理攻撃力を上昇させる。", "verified": false },
+      { "name_ja": "アビス", "name_en": "Blood Weapon", "type": "SPアビリティ", "effect": "一定時間、物理攻撃時にHPを吸収するようになる。", "verified": false }
+    ]},
+    { "job_ja": "ビーストマスター", "job_en": "Beastmaster (BST)", "abilities": [
+      { "name_ja": "ブロードミンド...チャーム", "name_en": "Charm", "type": "ジョブアビリティ", "effect": "野生モンスターを一時的に使い魔にする。", "verified": false },
+      { "name_ja": "リィーヴ", "name_en": "Reward", "type": "ジョブアビリティ", "effect": "使い魔のHPを回復する。", "verified": false },
+      { "name_ja": "スパー", "name_en": "Killer Instinct", "type": "SPアビリティ", "effect": "使い魔のTP増加量を大幅に上昇させる。", "verified": false }
+    ]},
+    { "job_ja": "吟遊詩人", "job_en": "Bard (BRD)", "abilities": [
+      { "name_ja": "ソウルヴォイス", "name_en": "Soul Voice", "type": "SPアビリティ", "effect": "一定時間、歌の効果量が大幅に上昇し、詠唱時間も短縮される。", "verified": false },
+      { "name_ja": "ナイチンゲール", "name_en": "Nightingale", "type": "ジョブアビリティ", "effect": "一時的に歌の詠唱時間を短縮する。", "verified": false },
+      { "name_ja": "トルバドール", "name_en": "Troubadour", "type": "ジョブアビリティ", "effect": "一時的に歌の効果時間を延長する。", "verified": false }
+    ]},
+    { "job_ja": "レンジャー", "job_en": "Ranger (RNG)", "abilities": [
+      { "name_ja": "スカベンジ", "name_en": "Scavenge", "type": "ジョブアビリティ", "effect": "自身の遠隔攻撃精度を上昇させる。", "verified": false },
+      { "name_ja": "剛弓", "name_en": "Barrage", "type": "ジョブアビリティ", "effect": "遠隔攻撃を複数回連続で行う。", "verified": false },
+      { "name_ja": "百矢", "name_en": "Flashy Shot", "type": "SPアビリティ", "effect": "強力な遠隔攻撃を放ちつつ状態異常を付与する。", "verified": false }
+    ]},
+    { "job_ja": "侍", "job_en": "Samurai (SAM)", "abilities": [
+      { "name_ja": "百合", "name_en": "Meikyo Shisui", "type": "SPアビリティ", "effect": "一定時間、WSでTPを消費しなくなる。", "verified": false },
+      { "name_ja": "невозможно...三昧", "name_en": "Sekkanoki", "type": "ジョブアビリティ", "effect": "次のウェポンスキルのTPロック消費が半分になる。", "verified": false },
+      { "name_ja": "残心", "name_en": "Zanshin", "type": "ジョブ特性(常時)", "effect": "多段攻撃時に追加攻撃が発生する確率を得る。", "verified": false }
+    ]},
+    { "job_ja": "忍者", "job_en": "Ninja (NIN)", "abilities": [
+      { "name_ja": "壬生狼", "name_en": "Mijin Gakure", "type": "ジョブアビリティ", "effect": "自身のHPを犠牲に大ダメージを周囲に与えて離脱する。", "verified": false },
+      { "name_ja": "デスペラード...三重の術", "name_en": "Futae", "type": "ジョブ特性(常時)", "effect": "忍術を2回同時発動できるようになる確率を得る。", "verified": false },
+      { "name_ja": "夢想阿含", "name_en": "Mummu Jutsu", "type": "SPアビリティ", "effect": "一定時間、忍術のリキャストが実質無くなる。", "verified": false }
+    ]},
+    { "job_ja": "竜騎士", "job_en": "Dragoon (DRG)", "abilities": [
+      { "name_ja": "竜牙槍", "name_en": "Jump", "type": "ジョブアビリティ", "effect": "対象にジャンプ攻撃でダメージを与える。", "verified": false },
+      { "name_ja": "高竜牙槍", "name_en": "High Jump", "type": "ジョブアビリティ", "effect": "対象にジャンプ攻撃を行い、自身のヘイトを下げる。", "verified": false },
+      { "name_ja": "スピリットリンク", "name_en": "Spirit Link", "type": "ジョブアビリティ", "effect": "自身と竜のHPを分け合う。", "verified": false },
+      { "name_ja": "エアーズヒール...竜の心", "name_en": "Spirit Surge", "type": "SPアビリティ", "effect": "自身と竜のダメージを一時的に大幅上昇させる。", "verified": false }
+    ]},
+    { "job_ja": "召喚士", "job_en": "Summoner (SMN)", "abilities": [
+      { "name_ja": "アヴァターの加護", "name_en": "Avatar's Favor", "type": "ジョブアビリティ", "effect": "召喚獣のブラッドパクトのTPコストを軽減する。", "verified": false },
+      { "name_ja": "アストラルフロウ", "name_en": "Astral Flow", "type": "ジョブアビリティ扱い", "effect": "召喚獣の絶技(ブラッドパクト)を即座に発動する。", "verified": false }
+    ]},
+    { "job_ja": "青魔道士", "job_en": "Blue Mage (BLU)", "notes_ja": "青魔道士。", "abilities": [
+      { "name_ja": "アズールランパート", "name_en": "Azure Lore", "type": "ジョブ特性(常時)", "effect": "セットする青魔法の数を増やす。", "verified": false },
+      { "name_ja": "コンビータ...シュリークオブパクト", "name_en": "Chain Affinity", "type": "ジョブアビリティ", "effect": "次に発動する青魔法の追加効果を確実に発動させる。", "verified": false },
+      { "name_ja": "エフラエイム...アンブラソウル", "name_en": "Unbridled Learning", "type": "SPアビリティ", "effect": "一定時間、青魔法のクリティカル率・追加効果が強化される。", "verified": false }
+    ]},
+    { "job_ja": "コルセア", "job_en": "Corsair (COR)", "abilities": [
+      { "name_ja": "ロール", "name_en": "Roll", "type": "ジョブアビリティ", "effect": "サイコロを振り、パーティ全体に様々なランダム効果を付与する(種類多数)。", "verified": false },
+      { "name_ja": "ダブルアップ", "name_en": "Double-Up", "type": "ジョブアビリティ", "effect": "直前のロールの効果を再抽選し、効果を強化できる。", "verified": false },
+      { "name_ja": "冒険者の心得", "name_en": "Wild Card", "type": "SPアビリティ", "effect": "パーティメンバーのジョブアビリティのリキャストを一部回復させる。", "verified": false }
+    ]},
+    { "job_ja": "からくり士", "job_en": "Puppetmaster (PUP)", "abilities": [
+      { "name_ja": "デプロイ", "name_en": "Deploy", "type": "ジョブアビリティ", "effect": "オートマトン(からくり人形)を展開する。", "verified": false },
+      { "name_ja": "リペア", "name_en": "Repair", "type": "ジョブアビリティ", "effect": "オートマトンのHPを回復する。", "verified": false },
+      { "name_ja": "オーバーロード", "name_en": "Overload", "type": "SPアビリティ", "effect": "オートマトンの性能を一時的に大幅強化する。", "verified": false }
+    ]},
+    { "job_ja": "踊り子", "job_en": "Dancer (DNC)", "abilities": [
+      { "name_ja": "ステップ", "name_en": "Step", "type": "ジョブアビリティ", "effect": "対象に弱体効果を与える(TP消費でフィニッシングムーブを蓄積)。", "verified": false },
+      { "name_ja": "ワルツ", "name_en": "Waltz", "type": "ジョブアビリティ", "effect": "TPを消費して自身または対象のHPを回復する。", "verified": false },
+      { "name_ja": "サンバ", "name_en": "Samba", "type": "ジョブアビリティ", "effect": "継続効果を発動する踊り(命中アップ等)。", "verified": false },
+      { "name_ja": "サドゥンストラック...グランドパドゥドゥ", "name_en": "Grand Pas", "type": "SPアビリティ", "effect": "フィニッシングムーブの効果を一時的に大幅強化する。", "verified": false }
+    ]},
+    { "job_ja": "学者", "job_en": "Scholar (SCH)", "abilities": [
+      { "name_ja": "ライトアーツ", "name_en": "Light Arts", "type": "ジョブアビリティ", "effect": "白魔法を強化するモードに切り替える。", "verified": false },
+      { "name_ja": "ダークアーツ", "name_en": "Dark Arts", "type": "ジョブアビリティ", "effect": "黒魔法を強化するモードに切り替える。", "verified": false },
+      { "name_ja": "ストラタジェム", "name_en": "Stratagem", "type": "ジョブアビリティ", "effect": "特殊な魔法効果(蓄積制)を発動するためのゲージ。多くの派生技がある。", "verified": false },
+      { "name_ja": "秘策", "name_en": "Addendum: White / Black", "type": "ジョブアビリティ", "effect": "アーツにさらに追加の詠唱短縮/威力上昇効果を付与する。", "verified": false }
+    ]},
+    { "job_ja": "風水士", "job_en": "Geomancer (GEO)", "notes_ja": "「ジオマンサー」は通称。正式な日本語ジョブ名は「風水士」。", "abilities": [
+      { "name_ja": "融合", "name_en": "Full Circle", "type": "ジョブアビリティ", "effect": "印魔法と地霊魔法の展開範囲を入れ替える。", "verified": false },
+      { "name_ja": "地霊の陣", "name_en": "Bolster", "type": "ジョブアビリティ", "effect": "展開中の地霊/印魔法の効果を強化する。", "verified": false },
+      { "name_ja": "モードチェンジ...サブライム", "name_en": "Life Cycle", "type": "SPアビリティ", "effect": "地霊魔法の効果を一時的に大幅強化する。", "verified": false }
+    ]},
+    { "job_ja": "魔導剣士", "job_en": "Rune Fencer (RUN)", "notes_ja": "「ルーンフェンサー」は通称。正式な日本語ジョブ名は「魔導剣士」。", "abilities": [
+      { "name_ja": "ルーン刻印", "name_en": "Rune Enchantment", "type": "ジョブアビリティ", "effect": "自身にルーンを付与し、対応する属性への耐性・カウンター効果を得る。", "verified": false },
+      { "name_ja": "ワード", "name_en": "Ward", "type": "ジョブアビリティ", "effect": "周囲に特定属性耐性を付与する効果範囲を展開する。", "verified": false },
+      { "name_ja": "一心", "name_en": "Vallation / Swordplay", "type": "ジョブアビリティ", "effect": "刻印したルーン数に応じて物理/魔法防御力を上昇させる。", "verified": false },
+      { "name_ja": "神篭り", "name_en": "Ignis / Gelus / Flabra / Tellus / Sulpor / Unda", "type": "SPアビリティ", "effect": "刻印したルーンに応じた強力な追加効果を発動する(属性ごとに異なる)。", "verified": false }
+    ]}
+  ]
+}

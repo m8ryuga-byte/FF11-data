@@ -1,0 +1,22 @@
+{
+  "skill": "青魔法 (Blue Magic)",
+  "description": "青魔道士(BLU)がモンスターの特殊技を戦闘中に習得して使用する魔法。全体で約190種以上存在するため、ここでは代表的なものを抜粋。",
+  "spells": [
+    { "name_ja": "ヘッドバット", "name_en": "Head Butt", "category": "物理技(スタン)", "jobs": ["BLU"], "effect": "対象に物理ダメージを与え、スタンさせる。", "notes": "", "verified": false },
+    { "name_ja": "ソニックバスト", "name_en": "Sound Blast", "category": "特殊技(弱体)", "jobs": ["BLU"], "effect": "対象の物理命中率を低下させる。", "notes": "", "verified": false },
+    { "name_ja": "コクーン", "name_en": "Cocoon", "category": "強化技(自己)", "jobs": ["BLU"], "effect": "自身の物理防御力を上昇させる。", "notes": "", "verified": false },
+    { "name_ja": "フォイズンブレス", "name_en": "Foul Waters", "category": "特殊技", "jobs": ["BLU"], "effect": "対象に水属性ダメージと様々な弱体効果を与える。", "notes": "", "verified": false },
+    { "name_ja": "ジェットストリーム", "name_en": "Jet Stream", "category": "物理技(連続攻撃)", "jobs": ["BLU"], "effect": "対象に連続物理ダメージを与える。", "notes": "", "verified": false },
+    { "name_ja": "フレイムブレス", "name_en": "Flame Breath", "category": "特殊技(火属性)", "jobs": ["BLU"], "effect": "対象に火属性の範囲ダメージを与える。", "notes": "", "verified": false },
+    { "name_ja": "ブリザドブレス", "name_en": "Cold Breath", "category": "特殊技(氷属性)", "jobs": ["BLU"], "effect": "対象に氷属性の範囲ダメージを与える。", "notes": "", "verified": false },
+    { "name_ja": "モンクスパイダー...", "name_en": "Pollen", "category": "回復技", "jobs": ["BLU"], "effect": "自身のHPを回復する。", "notes": "", "verified": false },
+    { "name_ja": "レザーストール", "name_en": "Feather Storm", "category": "特殊技(風属性)", "jobs": ["BLU"], "effect": "対象に風属性ダメージを与える。", "notes": "", "verified": false },
+    { "name_ja": "アクトリオンチェイン", "name_en": "Actinic Burst", "category": "特殊技(光属性)", "jobs": ["BLU"], "effect": "対象に光属性の大ダメージを与える。", "notes": "", "verified": false },
+    { "name_ja": "スタン", "name_en": "Stinking Gas", "category": "特殊技(弱体)", "jobs": ["BLU"], "effect": "対象を毒状態にし、アクセ・命中を低下させる。", "notes": "", "verified": false },
+    { "name_ja": "アンプリファイア", "name_en": "Amplification", "category": "強化技(自己)", "jobs": ["BLU"], "effect": "次に発動する青魔法の追加効果発動率を上昇させる。", "notes": "", "verified": false },
+    { "name_ja": "コンビータ", "name_en": "Convergence", "category": "強化技(自己)", "jobs": ["BLU"], "effect": "青魔法の詠唱時間を短縮する。", "notes": "", "verified": false },
+    { "name_ja": "バーサーク", "name_en": "Chaotic Eye", "category": "特殊技(弱体)", "jobs": ["BLU"], "effect": "対象を混乱状態にする。", "notes": "", "verified": false },
+    { "name_ja": "マニフォールドバインド", "name_en": "Frypan", "category": "物理技", "jobs": ["BLU"], "effect": "対象に物理ダメージを与える。", "notes": "", "verified": false }
+  ],
+  "note": "青魔法は数が非常に多く(約190種以上)、本ファイルは代表例のみです。今後カテゴリ別(物理技/属性攻撃/状態異常付与/自己強化など)に拡張予定。"
+}
