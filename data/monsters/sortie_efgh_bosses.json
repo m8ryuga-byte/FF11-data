@@ -1,13 +1,20 @@
 {
-  "title": "物理ソーティ E/F/G/Hボス 基礎データ",
-  "source_note": "Discord添付画像から別セッションが学習し共有。「わし日記」ブログのE/F/G INT値(363/350/504)と一致することを確認済みの、より詳細な公式基礎データ。",
+  "title": "物理ソーティ E/F/G/H/Aminonボス 基礎データ",
+  "source_note": "基礎表(HP/回避/魔防/INT/MND概要)はDiscord添付画像から別セッションが学習し共有。詳細版(サブジョブ・属性耐性の内訳・状態異常耐性・通常攻撃パターン)は、Wiki「英雄なき時代の英雄」管理人Twitter(@long_horned)から同セッションが取得。「わし日記」ブログのE/F/G INT値(363/350/504)、data/combat_formulas.jsonのRANK_TABLEコメント(同じく「英雄なき時代の英雄」準拠)とも一致する一次情報群。",
   "level": 145,
-  "resistance_note": "elemental_damage_reduction_pct(魔法ダメージ軽減率)とelemental_resistance_pct(属性耐性%)は、元データが「火水・氷雷・風土・光闇」の4ペア単位・各4値でしか提供されていないため、ペア内の2属性(例:火と水)が同一値を共有するのか、単純化された表記なのかは未確認。ペア単位のまま保持している。",
+  "resistance_note": "基礎表(elemental_damage_reduction_pct / elemental_resistance_pct)は元がペア単位(火水・氷雷・風土・光闇)でしか取得できなかったための暫定値。詳細版で得られた per-element(1属性ごと)の値を elemental_detail に別途記載しており、詳細版の方が精度が高い。両者が食い違う場合は elemental_detail を優先すること。",
+  "known_data_conflicts": [
+    "Triboulex(G)の光属性: data/encounters/sortie9_physical_bosses.md の実戦ログでは、コルセアのインパクト(光属性BLU技)を撃ったところダメージではなくHP回復(589)という結果が観測されており、実測上は「光属性を吸収している」ことを強く示唆する。しかし詳細版(@long_horned情報)では『闇=吸収、光=70%耐性(吸収ではない)』となっており、実測と詳細版の記載が食い違っている。原因(個体差・実装変更・詳細版の誤記等)は不明なため、光・闇のどちらも使わない運用を引き続き推奨する。",
+    "Gartell(F)の弱点属性: data/encounters/sortie9_physical_bosses.md の実戦ログ考察では『弱点:氷 or 土(切替制)』とされていたが、詳細版では『風モード時は氷70%・風吸収(氷に強い)』『雷モード時は土70%・雷吸収(土に強い)』となっており、記載の意味(モード名と弱点属性の対応関係)がログ側の解釈と整合しない可能性がある。要検証。"
+  ],
   "bosses": [
     {
       "letter": "E",
       "name": "Dhartok",
+      "subjob": "WAR/BLM",
+      "level": 145,
       "hp": 1560000,
+      "hp_source_text": "約156万",
       "evasion": 1581,
       "magic_defense": 100,
       "int": 363,
@@ -15,13 +22,31 @@
       "damage_cut": "なし",
       "elemental_damage_reduction_pct": { "fire_water": 70, "ice_thunder": 50, "wind_earth": 70, "light_dark": 70 },
       "elemental_resistance_pct": { "fire_water": "吸収", "ice_thunder": 70, "wind_earth": 85, "light_dark": 5 },
+      "elemental_detail": {
+        "fire": 70, "water": "吸収", "ice": 50, "thunder": 70,
+        "wind": -50, "earth": 85, "light": 70, "dark": 5,
+        "note": "元テキストは「風-50%／土85%／火風雷光70%／氷50%／闇5%／水吸収」。「火風雷光70%」内の風は-50%と重複表記と判断し、風は-50%(弱点)に一本化した。"
+      },
+      "status": {
+        "累積履行・累積WS耐性": "-90%(同じ技/WSの連続使用は効果が大きく減衰する)",
+        "同一技耐性": "なし",
+        "ミュイン": "なし"
+      },
+      "attack_patterns": [
+        { "id": "A", "name": "水球", "range": "標的周囲", "element": "水" },
+        { "id": "B", "name": "舌", "range": "前方", "element": "物理" },
+        { "id": "C", "name": "跳躍", "range": "周囲", "element": "物理" }
+      ],
       "required_magic_accuracy_mb": 1316,
       "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:土 85%)"
     },
     {
       "letter": "F",
       "name": "Gartell",
+      "subjob": "MNK/BLM",
+      "level": 145,
       "hp": 1600000,
+      "hp_source_text": "約160万",
       "evasion": 1613,
       "magic_defense": 100,
       "int": 350,
@@ -29,13 +54,27 @@
       "damage_cut": "時間経過",
       "elemental_damage_reduction_pct": { "fire_water": 5, "ice_thunder": 70, "wind_earth": "吸収", "light_dark": 5 },
       "elemental_resistance_pct": { "fire_water": 5, "ice_thunder": "吸収", "wind_earth": 70, "light_dark": 5 },
+      "elemental_detail": {
+        "base": { "fire": 5, "water": 5, "ice": 5, "thunder": 5, "wind": -50, "earth": 5, "light": 5, "dark": 5 },
+        "wind_mode": { "ice": 70, "wind": "吸収" },
+        "thunder_mode": { "earth": 70, "thunder": "吸収" },
+        "note": "元テキストは「風-50%／火氷風土雷水光闇5%／風モード時：氷70%・風吸収／雷モード時：土70%・雷吸収」。基礎値は風-50%(弱点)、他属性は一律5%と解釈(「全属性5%」リスト内の風は重複表記として除外)。モード切替時のみ表の値が適用されると思われるが詳細不明。known_data_conflicts も参照。"
+      },
+      "status": {
+        "累積履行・累積WS耐性": "-90%",
+        "同一技耐性": "なし",
+        "ミュイン": "なし"
+      },
       "required_magic_accuracy_mb": 1344,
       "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:土/氷 70%)"
     },
     {
       "letter": "G",
       "name": "Triboulex",
+      "subjob": "DRK/BLM",
+      "level": 145,
       "hp": 1500000,
+      "hp_source_text": "約150万",
       "evasion": 1581,
       "magic_defense": 100,
       "int": 504,
@@ -43,13 +82,26 @@
       "damage_cut": "なし",
       "elemental_damage_reduction_pct": { "fire_water": 60, "ice_thunder": 30, "wind_earth": 50, "light_dark": 70 },
       "elemental_resistance_pct": { "fire_water": 50, "ice_thunder": 60, "wind_earth": 40, "light_dark": "吸収" },
+      "elemental_detail": {
+        "fire": 60, "water": 50, "ice": 30, "thunder": 60,
+        "wind": -50, "earth": 40, "light": 70, "dark": "吸収",
+        "note": "元テキストは「風-50%／光70%／火雷60%／風水50%／土40%／氷30%／闇吸収」。ミッションのバラモアとは精霊耐性が異なり(火・雷が同じ属性の点が特徴)と付記あり。known_data_conflicts に記載の通り、実戦ログでは光属性(インパクト)がダメージでなくHP回復になっており、この表の『闇=吸収、光=70%』とは矛盾する。"
+      },
+      "status": {
+        "累積履行・累積WS耐性": "-90%",
+        "同一技耐性": "なし",
+        "ミュイン": "なし"
+      },
       "required_magic_accuracy_mb": 1372,
-      "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:火/雷 60%)。data/encounters/sortie9_physical_bosses.mdで確認された光属性(インパクト)吸収の実測と、この表のlight_dark=吸収が一致。"
+      "required_magic_accuracy_note": "data/mechanics/magic_accuracy_requirements.md 記載の値(弱点属性:火/雷 60%)。ただし光・闇の扱いは known_data_conflicts を参照。"
     },
     {
       "letter": "H",
       "name": "Aita",
+      "subjob": "RUN/DRK",
+      "level": 145,
       "hp": 1600000,
+      "hp_source_text": "約160万",
       "evasion": 1613,
       "magic_defense": 122,
       "int": 494,
@@ -57,8 +109,50 @@
       "damage_cut": "時間経過",
       "elemental_damage_reduction_pct": { "fire_water": 70, "ice_thunder": null, "wind_earth": 70, "light_dark": 5 },
       "elemental_resistance_pct": { "fire_water": 70, "ice_thunder": 70, "wind_earth": 70, "light_dark": 5 },
+      "elemental_detail": {
+        "base": { "fire": 5, "water": 5, "ice": 5, "thunder": 5, "wind": -50, "earth": 5, "light": 5, "dark": 5 },
+        "special_move_weak_element_pct": 70,
+        "note": "元テキストは「風-50%／火氷風土雷水光闇5%／特殊技の弱点属性70%」。『特殊技の弱点属性70%』の正確な意味(自身が使う特殊技と同じ属性への耐性が70%になる、等)は未確認。"
+      },
+      "status": {
+        "累積履行WS耐性": "-90%",
+        "同一技耐性": "なし",
+        "ミュイン": "なし"
+      },
+      "attack_patterns": [
+        { "id": "A", "name": "手刀", "range": "単体", "element": "無", "effect": "スタン" },
+        { "id": "B", "name": "蹴り", "range": "前方", "element": "闇", "effect": "ノックバック" },
+        { "id": "C", "name": "気弾", "range": "標的周囲", "element": "風", "effect": "ノックバック" }
+      ],
       "required_magic_accuracy_mb": null,
-      "required_magic_accuracy_note": "他ボスと比べ魔防(122)・INT(494)・MND(427)が高水準。data/encounters/sortie9_physical_bosses.mdでは弱点は風(-50%)と記録されているが、必要魔命の実測値は未取得。"
+      "required_magic_accuracy_note": "他ボスと比べ魔防(122)・INT(494)・MND(427)が高水準。data/encounters/sortie9_physical_bosses.mdでは弱点は風(-50%)と記録されており、詳細版のwind=-50%とも一致。必要魔命の実測値は未取得。"
+    },
+    {
+      "letter": "★",
+      "name": "Aminon",
+      "subjob": "DRK/RUN",
+      "level": 149,
+      "hp": 5400000,
+      "hp_source_text": "約540万",
+      "evasion": 1774,
+      "magic_defense": 152,
+      "magic_defense_note": "本来の魔防は122(Aitaと同値)だが、この個体は+30盛られて152になっている。",
+      "int": 540,
+      "mnd": 468,
+      "physical_and_breath_pct": { "slash": 0, "pierce": 0, "blunt": 0, "magic": 0, "breath": 0 },
+      "elemental_detail": {
+        "fire": 5, "water": 5, "ice": 5, "thunder": 5, "wind": -50, "earth": 5,
+        "light": 70, "dark": 70,
+        "note": "元テキストは「斬突打魔息+0%／風-50%／光闇70%／火氷風土雷水5%」。『火氷風土雷水5%』内の風は-50%と重複表記と判断し、風は-50%(弱点)に一本化した。"
+      },
+      "store_tp_pct": 0,
+      "regain": 50,
+      "muyin_pct": -10,
+      "same_technique_resistance": "あり(Dhartok/Gartell/Triboulex/Aitaにはない耐性)",
+      "status_afflictable": ["バインド", "ヘヴィ", "石化", "睡眠"],
+      "special": "魔剣使用時にオートリジェネ(HP自動回復+3)が付与される",
+      "required_magic_accuracy_mb": 1822,
+      "required_magic_accuracy_note": "data/builds/rdm_physical_sortie_accuracy.md 記載のRDM/DRKサポ・ML45時点の必要命中(両手1822/片手1830)と対になる基礎データ。"
     }
   ]
 }

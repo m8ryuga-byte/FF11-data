@@ -104,3 +104,5 @@ vanafratello.com基準(命中率95%→99%換算)と同じ考え方。
 - `data/mechanics/magic_accuracy_requirements.md` — 魔法アタッカー視点の必要魔命
   (E/F/Gボス)
 - `data/encounters/sortie9_physical_bosses.md` — 同コンテンツ(物理ソーティ)の実戦ログ
+- `data/monsters/sortie_efgh_bosses.json` — Aminon含む各ボスの基礎ステータス
+  (HP・回避1774・魔防152など)。本メモの必要命中(両手1822/片手1830)と対になる。
