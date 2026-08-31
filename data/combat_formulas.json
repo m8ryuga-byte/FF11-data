@@ -15,7 +15,7 @@
     "formula": "defenseBase(lvl) = 1129 + 30 * (lvl - 134)"
   },
   "necessary_accuracy_two_man_cell": {
-    "description": "「Two Man Cell」実測に基づく必要命中値(回避スキルC区分=戦士/ナイト/暗黒騎士/獣使い/青魔道士列、両手武器命中95%キャップ基準)。Lv119-143は実測値、それ以外は増分約39.6/Lvで線形延長。",
+    "description": "「Two Man Cell」実測に基づく必要命中値(回避スキルC区分=戦士/ナイト/暗黒騎士/獣使い/青魔道士列、両手武器命中95%キャップ基準)。Lv119-143は実測値、それ以外は増分約39.6/Lvで線形延長。同種のデータの一次資料としてvanafratello.com「Level & Accuracy」(https://vanafratello.com/level-accuracy)が別セッションにより特定されている。同サイトの値は命中率95%基準、99%まで確保するには+8が必要。詳細は data/mechanics/high_difficulty_content_cl.md を参照。",
     "values": {
       "119": 813, "120": 839, "121": 866, "122": 893, "123": 920, "124": 947, "125": 975,
       "126": 1002, "127": 1029, "128": 1056, "129": 1083, "130": 1113, "131": 1143,
