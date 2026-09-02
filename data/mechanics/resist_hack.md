@@ -48,3 +48,8 @@
 
 弱体魔法を通すために必要な「魔命(魔法命中)」の目安値は
 `data/mechanics/magic_accuracy_requirements.md` を参照。
+
+BG-Wiki由来の魔法命中変換式(`data/combat_formulas.json` の
+`magic_accuracy_formula`)では、命中率50%を境に魔命1あたりの命中率上昇幅が
+半減する(50%以上: +1%/魔命、50%未満: +0.5%/魔命)という非線形の逓減が示されており、
+耐性ランクが上がるほど必要魔命が急増するという本ページのロジックと整合する。

@@ -36,5 +36,33 @@
       "D":  { "jobs_ja": ["赤魔道士", "吟遊詩人", "コルセア", "風水士"], "formula": "v*0.9902+0.97" },
       "E":  { "jobs_ja": ["白魔道士", "黒魔道士", "レンジャー", "学者", "召喚士"], "formula": "v*0.982+0.6" }
     }
+  },
+  "physical_accuracy_formula": {
+    "source": "BG-Wiki(英語圏の主要FF11 wiki)。別セッションが取得・共有。",
+    "description": "物理命中(Accuracy)の基礎計算式。総命中値の内訳と、命中値から命中率(%)への変換式。",
+    "total_accuracy": "総命中 = DEXからの命中 + 戦闘スキルからの命中 + 特性/装備等からの命中",
+    "dex_contribution": "floor(DEX * 0.75)。ペットの場合は floor(DEX * 0.5)。",
+    "skill_contribution": {
+      "description": "戦闘スキルからの命中寄与は段階的に逓減する(スキルが上がるほど1ポイントあたりの寄与が下がる)。",
+      "tiers": [
+        { "range": "0-200", "formula": "skill" },
+        { "range": "201-400", "formula": "floor((skill-200)*0.9) + 200" },
+        { "range": "401-600", "formula": "floor((skill-400)*0.8) + 380" },
+        { "range": "601+", "formula": "floor((skill-600)*0.9) + 540" }
+      ]
+    },
+    "hit_rate_formula": "命中率(%) = 75 + floor((命中-回避) / 2) - 2 * dLVL",
+    "dlvl_definition": "dLVL = 敵レベル - 自レベル",
+    "evasion_tier_note": "命中が回避+10以上で「Low Evasion」(命中率約80%以上)、命中が回避-30以下で「High Evasion」(命中率60%未満)と分類される。"
+  },
+  "magic_accuracy_formula": {
+    "source": "BG-Wiki(英語圏の主要FF11 wiki)。別セッションが取得・共有。",
+    "description": "魔法命中(Magic Accuracy)から命中率への変換は、命中率50%を境に非線形に逓減する。",
+    "conversion": {
+      "at_or_above_50pct": "命中率50%以上の領域では、魔命+1につき命中率+1%(命中率95%が上限)。",
+      "below_50pct": "命中率50%未満の領域では、魔命+1につき命中率+0.5%。"
+    },
+    "components": "関連魔法スキル(1スキル=1魔命)、dSTAT(黒魔法はINT差・白魔法はMND差・歌はCHR差、±70で頭打ち=魔命±30相当)、装備・アビリティによるボーナス。",
+    "cross_reference_note": "data/mechanics/resist_hack.md に記載の『耐性ランクが上がるほど必要魔命が急増する』というレジストハックのロジックと、この非線形逓減式は整合する一次情報として位置づけられる。"
   }
 }
