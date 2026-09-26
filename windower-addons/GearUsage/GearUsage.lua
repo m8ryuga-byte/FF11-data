@@ -25,6 +25,21 @@ local WARDROBE_BAGS = {
 
 local previous_equipped = {}
 
+-- FFXIのアイテムフラグ: 0x8000=レア, 0x4000=EX(交換不可)
+local FLAG_RARE = 0x8000
+local FLAG_EX = 0x4000
+
+local function rare_ex_label(item_res)
+    if not item_res or not item_res.flags then return '' end
+    local flags = item_res.flags
+    local is_rare = bit.band(flags, FLAG_RARE) ~= 0
+    local is_ex = bit.band(flags, FLAG_EX) ~= 0
+    if is_rare and is_ex then return 'レア/EX' end
+    if is_rare then return 'レア' end
+    if is_ex then return 'EX' end
+    return ''
+end
+
 local function get_equipped_item_id(equip, slot_name)
     local bag_id = equip[slot_name .. '_bag']
     local slot_index = equip[slot_name]
@@ -155,14 +170,17 @@ local function show_wardrobe()
                 count = entry and entry.count or 0,
                 en = item_res and item_res.en or ('Unknown#' .. id),
                 ja = item_res and item_res.ja or '',
+                rare_ex = rare_ex_label(item_res),
             })
         end
     end
     table.sort(list, function(a, b) return a.count < b.count end)
     windower.add_to_chat(207, windower.to_shift_jis('GearUsage: モグワードローブ内 使用回数(少ない順)'))
+    windower.add_to_chat(207, windower.to_shift_jis('  ※レア/EXは売却不可(いらなければ削除のみ可能)'))
     for _, e in ipairs(list) do
-        local tag = (e.count == 0) and '【未使用】' or ''
-        windower.add_to_chat(207, windower.to_shift_jis(string.format('  %s (%s)  %d回 %s', e.en, e.ja, e.count, tag)))
+        local unused_tag = (e.count == 0) and '【未使用】' or ''
+        local flag_tag = (e.rare_ex ~= '') and ('[' .. e.rare_ex .. ']') or ''
+        windower.add_to_chat(207, windower.to_shift_jis(string.format('  %s (%s) %s  %d回 %s', e.en, e.ja, flag_tag, e.count, unused_tag)))
     end
     windower.add_to_chat(207, windower.to_shift_jis(string.format('合計 %d 種類', #list)))
 end
@@ -177,12 +195,17 @@ local function export_csv()
         windower.add_to_chat(207, windower.to_shift_jis('GearUsage: ファイル書き出しに失敗しました: ' .. path))
         return
     end
+    local ward_ids = {}
+    for _, id in ipairs(get_wardrobe_item_ids()) do ward_ids[id] = true end
+
     file:write('\239\187\191') -- UTF-8 BOM (Excel文字化け対策)
-    file:write('item_id,en,ja,count,last_used\n')
+    file:write('item_id,en,ja,count,last_used,rare_ex,in_wardrobe\n')
     local list = sorted_usage_list()
     for _, e in ipairs(list) do
         local last_str = (e.last and e.last > 0) and os.date('%Y-%m-%d %H:%M:%S', e.last) or ''
-        file:write(string.format('%d,"%s","%s",%d,%s\n', e.id, e.en, e.ja, e.count, last_str))
+        local rare_ex = rare_ex_label(res.items[e.id])
+        local in_wardrobe = ward_ids[e.id] and 'yes' or 'no'
+        file:write(string.format('%d,"%s","%s",%d,%s,%s,%s\n', e.id, e.en, e.ja, e.count, last_str, rare_ex, in_wardrobe))
     end
     file:close()
     windower.add_to_chat(207, windower.to_shift_jis('GearUsage: CSVを書き出しました: ' .. path))
